@@ -1,0 +1,9 @@
+jenkins:
+  systemMessage: "Welcome to the jenkins Whanos."
+
+  securityRealm:
+    local:
+      allowsSignup: false
+
+jobs:
+  - file: "INSERT_YOUR_PATH_HERE/jenkins/job_dsl.groovy"

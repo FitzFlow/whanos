@@ -1,0 +1,11 @@
+FROM python:3.12
+
+ONBUILD WORKDIR /app
+
+ONBUILD COPY requirements.txt requirements.txt
+
+ONBUILD RUN pip3 install -r requirements.txt
+
+ONBUILD COPY ./app ./app
+
+CMD ["python", "-m", "app"]
